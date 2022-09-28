@@ -1,10 +1,29 @@
 <template>
-  <nav>
+  <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/sign_up">Sign Up</router-link> |
+    <router-link to="/log_in">Log In</router-link>
+  </div>
   <router-view/>
 </template>
+
+<script>
+export default{
+  name:'App',
+  // beforeCreate() {
+  //   this.$store.commit("initializeStore")
+
+  //   const token = this.$store.state.token
+
+  //   if (token) {
+  //     axios.defaults.headers.common['Authorization'] = 'Token ' + token
+  //   } else {
+  //     axios.defaults.headers.common['Authorization'] = ''
+  //   }
+  // }
+}
+</script>
 
 <style lang="scss">
 #app {
