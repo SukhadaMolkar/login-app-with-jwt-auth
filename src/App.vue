@@ -11,7 +11,8 @@
 <script>
 export default{
   name:'App',
-  // beforeCreate() {
+  
+  // created() {
   //   this.$store.commit("initializeStore")
 
   //   const token = this.$store.state.token
